@@ -17,7 +17,7 @@ public class HomeMenu : MonoBehaviour
     {
         startButton.onClick.AddListener(StartGame);
         quitButton.onClick.AddListener(Quit);
-        bestScoreText.text = bestScoreText.text.Replace("{User}", StateManager.Instance.playerName);
+        bestScoreText.text = StateManager.Instance.buildBestScoreText();
     }
 
     void StartGame()

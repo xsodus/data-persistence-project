@@ -20,7 +20,12 @@ public class StateManager : MonoBehaviour
         {
             Destroy(this);
         }
-    } 
+    }
+
+    public string buildBestScoreText()
+    {
+        return $"Best Score : {StateManager.Instance.playerName} : {StateManager.Instance.bestScore}";
+    }
 
     private void OnApplicationQuit()
     {

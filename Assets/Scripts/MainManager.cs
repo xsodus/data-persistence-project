@@ -43,7 +43,7 @@ public class MainManager : MonoBehaviour
 
     private void renderBestScore ()
     {
-        BestScoreText.text = $"Best Score : {StateManager.Instance.playerName} : {StateManager.Instance.bestScore}";
+        BestScoreText.text = StateManager.Instance.buildBestScoreText();
     }
 
     private void Update()
