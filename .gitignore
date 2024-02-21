@@ -3,3 +3,4 @@ Library/
 Logs/
 Temps/
 Builds/
+.vscode/settings.json
